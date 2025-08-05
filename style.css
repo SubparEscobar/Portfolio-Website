@@ -17,83 +17,29 @@ header nav {
   align-items: center;
   position: relative;
 }
-.nav-links {
+nav ul {
   list-style: none;
   display: flex;
   gap: 1.5rem;
-  margin: 0;
-  padding: 0;
 }
-.nav-links li a {
+nav ul li a {
   color: white;
   text-decoration: none;
   transition: color 0.3s;
-  font-size: 1rem;
 }
-.nav-links li a:hover {
+nav ul li a:hover {
   color: #00d8ff;
 }
-.nav-toggle {
-  display: none;
-  background: none;
-  border: none;
-  cursor: pointer;
-  margin-left: 1rem;
-}
-.hamburger {
-  width: 28px;
-  height: 3px;
-  background: #fff;
-  display: block;
-  position: relative;
-}
-.hamburger::before,
-.hamburger::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  width: 28px;
-  height: 3px;
-  background: #fff;
-  transition: transform 0.3s;
-}
-.hamburger::before {
-  top: -8px;
-}
-.hamburger::after {
-  top: 8px;
-}
-.nav-toggle.open .hamburger {
-  background: transparent;
-}
-.nav-toggle.open .hamburger::before {
-  transform: translateY(8px) rotate(45deg);
-}
-.nav-toggle.open .hamburger::after {
-  transform: translateY(-8px) rotate(-45deg);
-}
-@media (max-width: 768px) {
-  .nav-links {
-    flex-direction: column;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background: #1e1e2f;
-    gap: 0;
-    display: none;
-    z-index: 100;
+@media (max-width: 600px) {
+  nav ul {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    gap: 0.5rem;
+    padding-bottom: 0.5rem;
   }
-  .nav-links.nav-open {
-    display: flex;
-  }
-  .nav-links li {
-    border-bottom: 1px solid #333;
-    text-align: center;
-    padding: 1rem 0;
-  }
-  .nav-toggle {
-    display: block;
+  nav ul li {
+    flex: 0 0 auto;
   }
 }
 
