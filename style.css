@@ -105,3 +105,8 @@ footer {
 #contact {
   text-align: center;
 }
+#about-text {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
