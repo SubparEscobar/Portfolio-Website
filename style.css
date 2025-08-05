@@ -1,0 +1,107 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fdfdfd;
+  color: #333;
+}
+
+header nav {
+  background: #1e1e2f;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+nav ul li a:hover {
+  color: #00d8ff;
+}
+
+#hero {
+  background: linear-gradient(to right, #4e54c8, #8f94fb);
+  color: white;
+  text-align: center;
+  padding: 5rem 2rem;
+}
+#hero .btn {
+  background: white;
+  color: #4e54c8;
+  margin-top: 1rem;
+}
+#hero .btn:hover {
+  background: #00d8ff;
+  color: white;
+}
+
+section {
+  padding: 3rem 2rem;
+}
+h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.project {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.btn {
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 25px;
+  background: #4e54c8;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  transition: background 0.3s ease;
+}
+.btn:hover {
+  background: #00d8ff;
+}
+
+.tech-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 1rem;
+  padding: 0;
+}
+.tech-list li {
+  background: #eee;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  background: #1e1e2f;
+  color: white;
+  padding: 1rem;
+}
+#contact p a {
+  margin: 0 0.5rem;
+  color: #333;
+  transition: color 0.3s;
+}
+#contact p a:hover {
+  color: #4e54c8;
+}
+#resume {
+  text-align: center;
+}
+#contact {
+  text-align: center;
+}
