@@ -55,7 +55,6 @@ h2 {
   text-align: center;
   margin: 2rem 0;
 }
-
 .btn {
   padding: 0.5rem 1.5rem;
   border: none;
@@ -69,7 +68,6 @@ h2 {
 .btn:hover {
   background: #00d8ff;
 }
-
 .tech-list {
   display: flex;
   justify-content: center;
@@ -79,12 +77,22 @@ h2 {
   padding: 0;
 }
 .tech-list li {
-  background: #eee;
-  padding: 0.5rem 1rem;
-  border-radius: 8px;
-  font-weight: bold;
+  display: inline-block;
+  background-color: #f1f1f1;
+  color: #333;
+  padding: 6px 12px;
+  margin: 6px;
+  border-radius: 20px;
+  font-size: 1.1rem;
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
 }
-
+.tech-list li:hover {
+  background-color: #0d6efd;
+  color: white;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 footer {
   text-align: center;
   background: #1e1e2f;
@@ -106,7 +114,64 @@ footer {
   text-align: center;
 }
 #about-text {
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
   text-align: center;
+}
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: left;
+}
+.profile-photo {
+  width: 220px;
+  height: auto;
+  border-radius: 50%;
+  border: 3px solid #ddd;
+  flex-shrink: 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.project-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  background-color: #fff;
+  transition: transform 0.2s ease-in-out;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+.profile-photo {
+  width: 180px;
+  height: auto;
+  border-radius: 50%;
+  border: 3px solid #ddd;
+  flex-shrink: 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-photo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(0, 123, 255, 0.4);
 }

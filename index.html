@@ -33,50 +33,59 @@
 
   <section id="about">
     <h2>About Me</h2>
-    <p id="about-text">
-      I'm currently enrolled in the Nucamp Fullstack Bootcamp where I’m learning web development from the ground up. 
-      I’ve built projects using HTML, CSS, JavaScript, and Bootstrap. Now I'm diving into React and self-studying C, C++, C#, .NET, SQL, TypeScript, and Next.js!
-      I am currently a Geologist, but earnestly looking to transition into a career in software development.
-      I love problem-solving and building things that make life easier. When I'm not coding, I enjoy family-time, gaming, and exploring new tech trends.
-      Feel free to check out my projects below and reach out if you'd like to connect!
-    </p>
+    <div class="about-content">
+      <img src="images/linkedIn-photo.jpg" alt="Aaron Escobar" class="profile-photo" />
+      <p id="about-text">
+        I'm currently enrolled in the Nucamp Fullstack Bootcamp where I’m learning web development from the ground up. 
+        I’ve built projects using HTML, CSS, JavaScript, and Bootstrap. Now I'm diving into React and self-studying C, C++, C#, .NET, SQL, TypeScript, and Next.js!
+        I am currently a Geologist, but earnestly looking to transition into a career in software development.
+        I love problem-solving and building things that make life easier. When I'm not coding, I enjoy family-time, gaming, and exploring new tech trends.
+        Feel free to check out my projects below and reach out if you'd like to connect!
+      </p>
+    </div>
   </section>
 
   <section id="projects">
     <h2>Projects</h2>
-    <div class="project">
-      <img src="images/nucampsite-preview.jpg" alt="Movie Night Picker Preview" />
-      <h3>🎬 Movie Night Picker</h3>
-      <p>A movie selector app that helps you pick a random movie to watch. Hosted on Firebase.</p>
-      <p><strong>Tech Stack:</strong> HTML, CSS, Bootstrap, JavaScript, TMDB API</p>
-      <a href="https://github.com/SubparEscobar/movie-night-picker" target="_blank" class="btn">View on GitHub</a>
-    </div>
-    <div class="project">
-      <img src="images/nucampsite-preview.jpg" alt="News App Preview" />
-      <h3>📰 News App</h3>
-      <p>
-        A responsive web application that fetches the latest news using the News API. 
-        Built with HTML, CSS, and JavaScript to practice working with external APIs and dynamic content rendering.
-      </p>
-      <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript, News API</p>
-      <a href="https://github.com/SubparEscobar/news-app" target="_blank" class="btn btn-outline-dark">View on GitHub</a>
-    </div>
-    <div class="project">
-      <img src="images/nucampsite-preview.jpg" alt="Color Guessing Game Preview" />
-      <h3>🎨 Color Guessing Game</h3>
-      <p>
-        A fun and interactive game that challenges players to guess the correct RGB color 
-        from a set of colors. Great for practicing DOM manipulation and JavaScript event handling.
-      </p>
-      <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript</p>
-      <a href="https://github.com/SubparEscobar/color-guessing-game" target="_blank" class="btn btn-outline-dark">View on GitHub</a>
-    </div>
-    <div class="project">
-      <img src="images/nucampsite-preview.jpg" alt="Nucampsite Preview" />
-      <h3>🏕️ Nucampsite</h3>
-      <p>A multi-page campsite website built to practice layout, navigation, and Bootstrap components as part of the Nucamp bootcamp curriculum.</p>
-      <p><strong>Tech Stack:</strong> HTML, CSS, Bootstrap</p>
-      <a href="https://github.com/SubparEscobar/nucampsite" target="_blank" class="btn btn-outline-dark">View on GitHub</a>
+    <div class="project-grid">
+
+      <div class="project-card">
+        <img src="images/movie-picker.png" alt="Movie Night Picker Preview" />
+        <h3>🎬 Movie Night Picker</h3>
+        <p>A sleek and interactive web app that helps indecisive movie lovers choose what to watch! Users can spin a customizable movie wheel, 
+          browse by genre, and even get surprise picks to make movie night stress-free and fun. Hosted on Firebase.</p>
+        <p><strong>Tech Stack:</strong> HTML, CSS, Bootstrap, JavaScript, TMDB API</p>
+        <a href="https://github.com/SubparEscobar/movie-night-picker" target="_blank" class="btn">View on GitHub</a>
+      </div>
+      <div class="project-card">
+        <img src="images/news-app.png" alt="News App Preview" />
+        <h3>📰 News App</h3>
+        <p>
+          A responsive web application that fetches the latest news using the News API. 
+          Built with HTML, CSS, and JavaScript to practice working with external APIs and dynamic content rendering.
+          Backend was generated with the help of generative AI, Cursor.
+        </p>
+        <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript, News API</p>
+        <a href="https://github.com/SubparEscobar/news-app" target="_blank" class="btn btn-outline-dark">View on GitHub</a>
+      </div>
+      <div class="project-card">
+        <img src="images/color-guessing-game.png" alt="Color Guessing Game Preview" />
+        <h3>🎨 Color Guessing Game</h3>
+        <p>
+          A fun and interactive game that challenges players to guess the correct RGB color 
+          from a set of colors. Great for practicing DOM manipulation and JavaScript event handling.
+        </p>
+        <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript</p>
+        <a href="https://github.com/SubparEscobar/color-guessing-game" target="_blank" class="btn btn-outline-dark">View on GitHub</a>
+      </div>
+      <div class="project-card">
+        <img src="images/nucampsite.png" alt="Nucampsite Preview" />
+        <h3>🏕️ Nucampsite</h3>
+        <p>A multi-page campsite website built to practice layout, navigation, and Bootstrap components as part of the Nucamp bootcamp curriculum.</p>
+        <p><strong>Tech Stack:</strong> HTML, CSS, Bootstrap</p>
+        <a href="https://github.com/SubparEscobar/nucampsite" target="_blank" class="btn btn-outline-dark">View on GitHub</a>
+      </div>
+
     </div>
   </section>
 
@@ -87,6 +96,8 @@
       <li>CSS</li>
       <li>JavaScript</li>
       <li>Bootstrap</li>
+      <li>Git/Github</li>
+      <li>Python</li>
       <li>React (learning)</li>
       <li>Node.js (upcoming)</li>
       <li>Express.js (upcoming)</li>
@@ -97,6 +108,7 @@
       <li>.NET (learning)</li>
       <li>TypeScript(learning)</li>
       <li>SQL(learning)</li>
+      <li>Next.js(learning)</li>
     </ul>
   </section>
 
